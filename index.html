@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fernanda Fernandes - Designer Gráfico </title>
+	
+	<!-- fonte -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/estilo_css.css">
+	<link href="css/lightbox.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	
+
+	<header>
+		<div class="container">
+
+			<img id="avatar" src="img/logo.png" alt="Logo Fernanda">
+			<div id="header-info">
+				<h1>Fernanda Fernandes</h1>
+				<h4>Designer Gráfico</h4>
+				<nav>
+					<a href="#bio">biografia</a>
+					<a href="#galeria">galeria</a>
+					<a href="#contato">contato</a>
+				</nav>
+			</div>
+
+		</div>
+	</header>
+
+	
+	<section id="bio">
+		<div class="container">
+			<h2 class="subtit2">biografia</h2>
+			<p1>Jornalista graduada e Designer em formação. Criativa e organizada. Apaixonada por histórias, cores, diferentes e culturas.</p1>
+		</div>
+	</section>
+
+	<section id="galeria">
+		<div class="container">
+			<div class="fundo">
+
+			<h2 class="subtit3">galeria</h2>
+			
+			<!-- inicio do grid-->
+			
+			<div class="grid-galeria">
+		
+
+			<figure>
+				<a data-lightbox="galeria" href="img/Captura de Tela 2022-12-03 às 09.35.47.png"><img src="img/vans.jpg" alt="Descricao da imagem" width="300"></a>
+			  <figcaption>Banner Vans</figcaption>
+			</figure>
+
+			<figure>
+			  <a href="img/Captura de Tela 2022-12-03 às 09.33.45.png" data-lightbox="galeria"><img src="img/temperando.jpg" width="300"></a>
+			  <figcaption>Capa de Livro</figcaption>
+			</figure>
+
+			<figure>
+			  <a href="img/Captura de Tela 2022-12-03 às 09.34.12.png" data-lightbox="galeria"><img src="img/bancas.jpg" alt="Descricao da imagem" width="300"></a>
+			  <figcaption>Capa de Livro</figcaption>
+			</figure>
+
+			<figure>
+			  <a href="img/Captura de Tela 2022-12-03 às 09.36.38.png" data-lightbox="galeria"><img src="img/criscare.jpg" alt="Descricao da imagem" width="300"></a>
+			  <figcaption>Logotipo: Cris Care</figcaption>
+			</figure>
+
+			<figure>
+			  <a href="img/Captura de Tela 2022-12-03 às 09.36.18.png" data-lightbox="galeria"><img src="img/walter.jpg" alt="Descricao da imagem" width="300"></a>
+			  <figcaption>Colagem</figcaption>
+			</figure>
+
+			<figure>
+			  <a href="img/Captura de Tela 2022-12-03 às 09.37.18.png" data-lightbox="galeria"><img src="img/duda.jpg" alt="Descricao da imagem" width="300"></a>
+			  <figcaption>Banner</figcaption>
+			</figure>
+	</div>
+			<!-- fim do grid-->
+		</div>
+			</div>
+	</section>
+
+	<section id="contato">
+
+			<h2 class="subtit">contato</h2>
+			<form action="#">
+
+				<div class="form-grupo">
+					<label for="nome">nome</label>
+					<input type="text" id="nome" name="nome">
+				</div>
+
+				<div class="form-grupo">
+					<label for="email">e-mail</label>
+					<input type="email" id="email" name="email" placeholder="nome@email.com" required>
+				</div>
+
+				<div class="form-grupo">
+					<label for="mensagem">mensagem</label>
+					<textarea id="mensagem" name="mensagem"></textarea>
+				</div>
+
+				<div class="form-grupo">
+					<input class="btn" type="submit" value="enviar">
+				</div>
+
+			</form>
+
+	</section>
+
+	<footer>
+		<div class="container">
+			<img id="color" src="img/cores.png" alt="cores do site">
+			<p>&copy; FERNANDA FERNANDES, 2022. </p>
+			
+		</div>
+	</footer>
+	<!--javascript-->
+	<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/lightbox.js"></script>
+</body>
+
+</html>

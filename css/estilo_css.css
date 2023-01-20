@@ -1,0 +1,309 @@
+/*reset básico*/
+body, h1, h2, h3, p, form, figure {
+	margin: 0;
+	padding: 0;
+	color: #692F5E;
+}
+h1{
+
+	font-size: 45px;
+}
+h4 {
+	color: #692F5E;
+	font-size: 26px;
+	margin-top: 10px;
+}
+
+/*tipografia*/
+body{
+	background-image: url("../img/amarelo_cima.png"),url("../img/amarelo_baixo.png");
+	background-repeat: repeat-x,repeat-x;
+	background-position: left top, left bottom; 
+	font-family: 'Comfortaa', cursive;
+	color: #000;
+}
+
+p1{
+	text-align: left;
+	color: #692F5E;
+	font-size: 22px;
+	
+
+	
+}
+h1, h2 {
+	font-family: 'Comfortaa', cursive;
+
+}
+
+.subtit {
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.subtit2{
+	font-size: 40px;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	margin-right: 80px;
+	margin-left: 75px;
+}
+.subtit3 {
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+/*layout base*/
+.container {
+	width: 960px;
+	margin: 0 auto; /*centraliza*/
+}
+section {
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
+
+/*navegação*/
+nav {
+	height: 50px;
+	line-height: 60px;
+
+}
+nav a {
+	color: #692F5E;
+	text-decoration: inherit;
+	display: inline-block;
+	margin-right: 120px;
+	font-size: 25px;
+}
+nav a:hover{
+	color: #9B84B5;
+}
+
+/*cabeçalho*/
+
+header {
+
+	background-size: cover;
+	color: #692F5E;
+	overflow: hidden;
+	padding: 120px 0;
+}
+#avatar {
+	width: 200px;
+	
+	float: left;
+}
+#header-info {
+	margin-left: 250px;
+	padding-top: 30px;
+}
+#header-info h2 {
+	font-size: 26px;
+	margin-bottom: 25px;
+}
+
+/* bio*/
+#bio p {
+	line-height: 2em;
+	text-align: center;
+}
+
+/*galeria*/
+
+#galeria {
+	
+	background-size: 150px 150px;
+	
+}
+
+#galeria figure {
+	background: #fff;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+	border-radius: 6px;
+	margin-bottom: 60px;
+	background-color: #9B84B5;
+}
+#galeria img {
+	display: block;
+	width: 100%;
+	border-radius: 6px 6px 0 0;
+}
+#galeria figure:hover img {
+	opacity: 0.6;
+	transition: all 0.3s;
+	
+}
+#galeria figure:hover figcaption {
+	background-color: #9B84B5;
+}
+#galeria figcaption {
+	padding: 15px;
+	transition: all 0.3s;
+	background-color: #fff;
+}
+.grid-galeria {
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	column-gap: 5%;
+}
+.fundo{
+	background-color: #E89090;
+	border-radius: 150px;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+/*contato*/
+
+#contato {
+	
+}
+#contato .subtit {
+	color: #692F5E;
+}
+#contato form {
+	width: 580px;
+	margin: 0 auto;
+}
+.form-grupo {
+	margin-bottom: 20px;
+
+
+}
+#contato label {
+	display: block;
+	color: #692F5E;
+	float:left;
+	width: 110px;
+	
+}
+#contato input, #contato textarea {
+	padding: 5px 10px;
+	border:0;
+	border-radius: 6px;
+	font-size: 16px;
+	width: 440px;
+	box-sizing: border-box;
+}
+#contato input{
+	height: 40px;
+}
+#contato .btn {
+	display: block;
+	width: 350px;
+	height: 30px;
+	margin-left: 160px;
+	color: #FAE4BA;
+	background: #692F5E;
+	
+}
+/*rodapé*/
+
+footer {
+	background: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	
+}
+#color {float: right;
+	width: 100px;
+	margin-bottom: auto;
+		
+}
+footer a {
+	color: #000;
+}
+
+/*media queries*/
+
+@media (min-width: 768px) and (max-width: 1023px){
+	/*estilo para tablet*/
+	h2.subtit2 {
+		float: none;
+		text-align: center;
+		
+	}
+	.container {
+		width: 630px;
+	}
+	.grid-galeria {
+		grid-template-columns: auto auto;
+	}
+	
+	nav {
+		display: flex;
+		justify-content: space-between;
+	}
+	nav a {
+		margin: 0;
+	}
+
+}
+
+@media (max-width: 767px){
+	/*estilo para mobile*/
+	
+	h2.subtit2 {
+		float: none;
+		text-align: center;
+		
+	}
+	
+	.container, #contato form{
+		width: auto;
+		margin:0 20px;
+	}
+	.grid-galeria{
+		grid-template-columns: auto;
+	}
+	/*ajuste header*/
+	#avatar {
+		float: none;
+		display: block;
+		margin:0 auto;
+	}
+	#header-info{
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	nav {
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	nav a {
+		margin: 0;
+		font-size: 20px;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
